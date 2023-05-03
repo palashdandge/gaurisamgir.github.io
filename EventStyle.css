@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+/* body {
+    min-height: 100vh;
+    width: 100%;
+    font-size: 16px;
+    background: #eee;
+    color: #777;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+* {
+    padding-top: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+
+.header {
+    text-align: center;
+    padding: 20px;
+  }
+  
+
+
+    .container {
+        width: 100%;
+        display: flex;
+        /* justify-content: center;
+        align-items: center; */
+        /* flex-wrap: wrap; */
+    }
+
+    .item-container {
+        position: relative;
+        margin: 24px;
+        width: 320px;
+        height: 570px;
+        overflow: hidden;
+        background-color: #fff;
+        box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.15);
+        cursor: pointer;
+    }
+
+    .img-container,
+    .body-container {
+        position: absolute;
+        /* top: 0;
+        left: 0; */
+        width: 100%;
+        height: 100%;
+    }
+
+    .img-container img {
+        width: 100%;
+        height: 70%;
+    }
+
+    .body-container {
+        position: relative;
+    }
+
+    .overlay {
+        position: relative;
+        width: 100%;
+        height: 400px;
+        background-color: rgba(24, 83, 122, 0.6);
+        opacity: 0;
+        transition: height linear 0.4s, opacity linear 0.2s;
+    }
+
+    .item-container:hover .overlay {
+        opacity: 1;
+        height: 150px;
+    }
+
+    .event-info {
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 8px;
+    }
+
+    .title,
+    .price {
+        color:crimson;
+        font-size: 1.5em;
+        font-weight: bold;
+        letter-spacing: 1px;
+        margin: 12px;
+    }
+
+    .info {
+        letter-spacing: 0.5px;
+        margin-bottom: 6px;
+    }
+
+    .separator {
+        width: 20%;
+        height: 6px;
+        background-color:red;
+        margin-bottom: 16px;
+    }
+
+    .additional-info {
+        border-top: 1px solid #bbb;
+        margin-top: 12px;
+        padding: 28px;
+        padding-bottom: 0;
+    }
+
+    .additional-info .info {
+        font-size: 0.9em;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .info i {
+        color: #18537a;
+        font-size: 1.1em;
+        margin-right: 4px;
+    }
+
+    .info span {
+        color: crimson
+        font-weight: bolder;
+    }
+
+    .action {
+        color: #fff;
+        border: 3px solid #fff;
+        background-color: transparent;
+        position: absolute;
+        top: -100px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60%;
+        outline: none;
+        cursor: pointer;
+        padding: 12px;
+        text-transform: uppercase;
+        font-size: 1.3em;
+        font-weight: bold;
+        letter-spacing: 2px;
+        transition: background-color 0.4s, top 0.4s;
+    }
+
+    .item-container:hover .action {
+        top: 50px;
+    }
+
+    .action:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    hr {
+        position: relative;
+        top: 20px;
+        border: 10%;
+        height: 5px;
+        background: darkorange;
+        margin-bottom: 20px;
+    }
+
+  
+
+/* Responsive layout - makes a two column-layout instead of four columns  */
+/* @media screen and (max-width: 800px) {
+    .container {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }  */
+
+  
+   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other  */
+  /* @media screen and (max-width: 600px) {
+    .container {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }  */
+
+
+
+
+
+
+ 
+  /* FOOTER  */
+
+  footer {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 30px 0;
+    
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-content h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+	color: white;
+  }
+  
+  .footer-content p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  .left, .center, .right {
+    width: 30%;
+    color: red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+  
+  
+  .right a {
+    display: block;
+    margin-bottom: 10px;
+    color: red;
+
+  }
+  
+  .right a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+	
+    margin-bottom: 20px;
+   
+  }
+  
+  .footer-bottom p {
+    font-size: 14px;
+    line-height: 1.5;
+    
+  }
+  
+
+
+/* for bold in gauri samgir and shri dattab  mandir in footer */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+
+* {
+	padding-top: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+  }
+  
+
+  /* FOOTER END */
+
+
+    /* for desktop */
+/* 
+
+@media screen and (min-width: 768px) {
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    
+    .item-container {
+      width: 30%;
+      margin-bottom: 30px;
+    }
+    
+    .item-container:nth-child(2) {
+      margin-left: 10px;
+      margin-right: 10px;
+      width: 40%;
+    }
+    
+    .img-container {
+      height: 400px;
+      overflow: hidden;
+      position: relative;
+    }
+    
+    .img-container img {
+      height: 100%;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+    
+    .body-container {
+      position: relative;
+      height: 200px;
+      margin-top: -50px;
+      padding: 20px;
+      background-color: #ffffff;
+    }
+  }
+   */
+
+
+
+
+  /* for mobile */
+
+/*   
+  @media screen and (max-width: 767px) {
+    .container {
+      display: block;
+    }
+    
+    .item-container {
+      margin-bottom: 30px;
+    }
+    
+    .img-container {
+      height: 200px;
+      overflow: hidden;
+      position: relative;
+    }
+    
+    .img-container img {
+      height: 100%;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+    
+    .body-container {
+      position: relative;
+      height: 200px;
+      margin-top: -50px;
+      padding: 20px;
+      background-color: #ffffff;
+    }
+  }
+    */
+
+
+
+
+
+
+
+
+
+
+  /* for mobile */
+  @media screen and (max-width: 767px) {
+    .container {
+      display: block;
+    }
+    
+    .item-container {
+      margin-bottom: 30px;
+    }
+    
+    .img-container {
+      height: 200px;
+      overflow: hidden;
+      position: relative;
+    
+      
+    }
+    
+    .img-container img {
+      height: 100%;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+     
+    }
+    
+    .body-container {
+      position: relative;
+      height: 200px;
+      margin-top: -50px;
+      padding: 20px;
+      background-color: #ffffff;
+    }
+  }
+  

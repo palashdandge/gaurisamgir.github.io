@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+* {
+  box-sizing: border-box;
+  /* border-radius: 50px; */
+  border: 100%;
+}
+
+
+* {
+  padding-top: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 20px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 2px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 1px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+ padding: 0;
+ border:20%;
+    
+}
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.Container {
+    width: 500px;
+    height: 170px;
+}
+
+.Container img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+
+
+  /* FOOTER  */
+
+  footer {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 30px 0;
+    
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-content h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+	color: white;
+  }
+  
+  .footer-content p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  .left, .center, .right {
+    width: 30%;
+    color: red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+  
+  
+  .right a {
+    display: block;
+    margin-bottom: 10px;
+    color: red;
+
+  }
+  
+  .right a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+	
+    margin-bottom: 20px;
+   
+  }
+  
+  .footer-bottom p {
+    font-size: 14px;
+    line-height: 1.5;
+    
+  }
+  
+
+
+/* for bold in gauri samgir and shri dattab  mandir in footer */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+
+* {
+	padding-top: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+  }
+  
+
+  /* FOOTER END */
+
+
+
+  /* WORD BLINKING */
+
+  .blink {
+    animation: blinker 1.5s linear infinite;
+    color: brown;
+    font-family:Arial Black;
+  
+    font-weight: bold;
+}
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
